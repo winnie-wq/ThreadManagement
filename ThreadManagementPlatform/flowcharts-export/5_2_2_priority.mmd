@@ -1,0 +1,13 @@
+﻿%%{init: {'flowchart': {'htmlLabels': false, 'curve': 'linear'}} }%%
+flowchart TD
+    S([寮€濮媇)
+    A{鍫嗙┖?}
+    B[poll 鏈€楂樹紭鍏圿
+    C[瀛愮嚎绋?sleep 鎬绘椂闀縘
+    D[join]
+    E([缁撴潫:杩斿洖浠诲姟])
+    Z([缁撴潫:杩斿洖绌篯)
+
+    S --> A
+    A -->|鏄瘄 Z
+    A -->|鍚 B --> C --> D --> E

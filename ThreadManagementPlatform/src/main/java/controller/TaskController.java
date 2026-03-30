@@ -37,7 +37,7 @@ public class TaskController {
             t.markSubmitted();
         }
 
-        // 真实 sleep 仿真四种策略墙钟耗时，选出最短者
+
         ScheduleStrategy strategy = SchedulerOptimizer.chooseBest(tasks);
 
         int permits = Math.min(ExecutionConfig.DEFAULT_RESOURCE_PERMITS, Math.max(1, tasks.size()));

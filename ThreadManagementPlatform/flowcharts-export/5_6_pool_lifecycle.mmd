@@ -1,0 +1,14 @@
+﻿%%{init: {'flowchart': {'htmlLabels': false, 'curve': 'linear'}} }%%
+flowchart TD
+    S([寮€濮媇)
+    A[execute 鎶曢€抅
+    B[闃熷垪鎺掗槦鎴栨墽琛宂
+    C[shutdown]
+    D[await 缁堟]
+    E{瓒呮椂?}
+    F[shutdownNow]
+    G([缁撴潫:姹犲仠姝)
+
+    S --> A --> B --> C --> D --> E
+    E -->|鏄瘄 F --> G
+    E -->|鍚 G

@@ -1,0 +1,15 @@
+﻿%%{init: {'flowchart': {'htmlLabels': false, 'curve': 'linear'}} }%%
+flowchart TD
+    S([寮€濮媇)
+    A[姹犵嚎绋嬪彇 Runnable]
+    B[绛夊緟璁稿彲]
+    C[鑾疯鍙痌
+    D[Task.run]
+    E[鍐欏巻鍙瞉
+    F{闇€閲婃斁?}
+    G[release]
+    H([缁撴潫])
+
+    S --> A --> B --> C --> D --> E --> F
+    F -->|鏄瘄 G --> H
+    F -->|鍚 H
